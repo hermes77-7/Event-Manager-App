@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href=" /styles/events.css"/>
+</head>
+<body id="evt_body">
+    
+    <main id="event_container">
+        
+        <div id="header">
+            <h2>Event Manager</h2>
+      <hr>
+
+      <nav id="nav1">
+        <a href=" /index.html" id="hp1"><p><b>Home</b></p></a>
+        <a href="Events.html" id="hp2"><p><b>Events</b></p></a>
+        
+        <button id="create_event"><b>Create Event</b></button>
+        
+      </nav>
+        </div>
+
+        <h1 id="view_title"><b><u>Event Viewer</u></b></h1>
+
+        <div id="EventCreator">
+            
+            <form id="create_event_form">
+
+                <div id="form_head">
+                    <h1>Event Creator</h1>
+                </div>
+
+                <div id="form_body">
+
+                    <div id="adm" class="event_criteria">
+                    <div class="field">
+                        <label for="admin_name">Admin Name</label>
+                        <input type="text" id="admin_name" name="admin_name" required/>
+                    </div>
+
+                    <div class="field">
+                        <label for="admin_password">Password</label>
+                        <input type="password" id="admin_password" name="admin_password" required/>
+                    </div>
+
+                </div>
+                
+                <div class="event_criteria">
+                    <div class="field">
+                        <label for="evtitle">Event Title</label>
+                        <input type="text" id="evtitle" name="evtitle" required/>
+                    </div>
+
+                    <div class="field">
+                        <label for="evdesc">Event Description</label>
+                        <input type="text" id="evdesc" name="evdesc" />
+                    </div>
+
+                    <div class="field">
+                        <label for="evloc">Event Location</label>
+                        <input type="text" id="evloc" name="evloc" required/>
+                    </div>
+                </div>
+
+                <div class="event_criteria">
+                    <div class="field">
+                        <label for="evcat">Event Category</label>
+                        <input type="text" id="evcat" name="evcat" required/>
+                    </div>
+
+                    <div class="field">
+                        <label for="evdate">Event Date</label>
+                        <input type="date" id="evdate" name="evdate" required/>
+                    </div>
+
+                    <div class="field">
+                        <label for="evcap">Event Capacity</label>
+                        <input type="number" id="evcap" name="evcap" required/>
+                    </div>
+                </div>
+
+                <div class="event_criteria">
+                    <button type="submit" class="formbtn" id="create_event_submit_button"> Submit </button>
+                    <button type="reset" class="formbtn">Reset</button>
+                </div>
+
+
+                </div>
+
+            </form>
+        </div>
+
+        <div id="evholder"></div>
+
+        <div id="event_registration">
+            <div id="rfe"><h1>Register for event</h1></div>
+            <form id="event_registration_form">
+            
+                <div class="event_criteria">
+                    <div class="field">
+                        <label for="user_name">User Name</label>
+                        <input type="text" id="user_name" name="user_name" required/>
+                    </div>
+
+                    <div class="field">
+                        <label for="user_email">Email</label>
+                        <input type="email" id="user_email" name="user_email" required/>
+                    </div>
+
+                     <div class="field">
+                        <label for="event_idz">Event ID</label>
+                        <input type="number" id="event_idz" name="event_idz" required/>
+                    </div>
+
+                </div>
+                <button type="submit" class="register_button">Submit</button>
+            </form>
+        </div>
+
+    </main>
+
+
+    <script type="module" src=" /dist/main.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,283 @@
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    padding: 10%;
+}
+
+#event_container{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-width: 50vh;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-radius: 20px;
+    border-width: 10px;
+    padding: 3%;
+    align-items: center;
+    gap: 40px;
+    height: auto;
+    box-shadow:0 6px 16px rgba(2,6,23,0.6);
+    transition:transform .06s ease, box-shadow .06s ease, background .12s ease;outline:none
+    
+}
+
+#view_title{
+    font-size: 46px;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #070391;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    align-items: center;
+    width: 850px;
+    box-shadow:0 6px 16px rgba(4, 25, 120, 0.6);
+    transition:transform .06s ease, box-shadow .06s ease, background .12s ease;outline:none
+}
+
+#nav1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+    font-size: 24px;
+    align-items: center;
+}
+
+#mode{
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    font-size: 8px;
+    background:linear-gradient(180deg,#111827,#1f2937);
+    box-shadow:0 6px 16px rgba(2,6,23,0.6);
+    transition:transform .06s ease, box-shadow .06s ease, background .12s ease;outline:none
+}
+
+#create_admin{
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    font-size: 8px;
+    background:linear-gradient(180deg,#ff000d,#5d0202);
+    box-shadow:0 6px 16px rgba(221, 27, 27, 0.6);
+    transition:transform .06s ease, box-shadow .06s ease, background .12s ease;outline:none
+}
+
+#create_event{
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    font-size: 8px;
+    background:linear-gradient(180deg,#111827,#1f2937);
+    box-shadow:0 6px 16px rgba(2,6,23,0.6);
+    transition:transform .06s ease, box-shadow .06s ease, background .12s ease;outline:none
+}
+
+button:active{
+    transform:translateY(5px);
+    box-shadow:0 0 0 3px rgba(96,165,250,0.15)
+}
+
+#create_event:hover{
+    color: #48cff4;
+}
+#create_admin:hover{
+    color: #48cff4;
+}
+
+#mode:hover{
+    color: #48cff4;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover{
+    transform:translateY(5px);
+    
+}
+
+hr {   
+    border-radius: 5px;
+    height: 2px;           
+    background-color: #48cff4; 
+    width: 40%;            
+    position: inherit;
+       
+}
+
+#create_event_form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #e3f5fa;
+    box-shadow:0 6px 16px rgba(2,6,23,0.6);
+    transition:transform .06s ease, box-shadow .06s ease, background .12s ease;outline:none;
+}
+
+.event_criteria{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+    
+}
+
+
+
+
+
+.field {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.field label {
+  font-size: 14px;
+  color: #000000;
+}
+
+.field input {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  font-size: 14px;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #070391;
+}
+
+
+.formbtn{
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 35px;
+    width: 175px;
+    font-size: 15px;
+    background:linear-gradient(180deg,#d4af37,#f5c542);
+    box-shadow:0 6px 16px rgba(2,6,23,0.6);
+    transition:transform .06s ease, box-shadow .06s ease, background .12s ease;outline:none;
+}
+
+#form_head{
+    display: flex;
+    flex-direction: row;
+    background-color: #d4af37;
+    border-radius: 20px 20px 0 0;
+    justify-content: center;
+    
+}
+
+#form_body{
+    display: flex;
+    flex-direction: column;
+    background-color: #e3f5fa;
+    padding: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 700px;
+    height: 300px;
+    border-radius: 0 0 20px 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #e3f5fa;
+    box-shadow:0 6px 16px rgba(2,6,23,0.6);
+    transition:transform .06s ease, box-shadow .06s ease, background .12s ease;outline:none;
+}
+
+.bodycard{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 25px;
+    width: 700px;
+}
+
+.headcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px 20px 0 0;
+    background-color: #d4af37;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.subcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#evholder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+}
+
+.register_button{
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    height: 35px;
+    width: 175px;
+    font-size: 15px;
+    background:linear-gradient(180deg,#d4af37,#f5c542);
+    box-shadow:0 6px 16px rgba(2,6,23,0.6);
+    transition:transform .06s ease, box-shadow .06s ease, background .12s ease;outline:none;
+    align-self: center;
+}
+
+#event_registration_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#rfe{
+    display: flex;
+    flex-direction: row;
+    background-color: #d4af37;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+}
+
+#event_registration{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: #e3f5fa;
+    padding-bottom: 20px;
+    width: 700px;
+    box-shadow:0 6px 16px rgba(2,6,23,0.6);
+    transition:transform .06s ease, box-shadow .06s ease, background .12s ease;outline:none;
+}
