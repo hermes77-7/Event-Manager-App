@@ -96,3 +96,5 @@ Overall, the project successfully meets the requirements defined in the assignme
 ## 7. Author Information
 
 Name: Biem Hermes Pride
+Email: hermes.biem@saintjeaningenieur.org
+ID: 2425L109
